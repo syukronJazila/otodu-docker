@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+  web:
+    build: .
+    image: syukronjazila/otodu:1.0
+    ports:
+      - "1234:80"
+    volumes:
+      - ./website/:/var/www/html
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: otodu
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin123
+    ports:
+      - "3301:3306"
+    volumes:
+      - ./init-user.sql:/docker-entrypoint-initdb.d/init-user.sql:ro

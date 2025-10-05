@@ -1,0 +1,248 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Rethink Sans", sans-serif;
+}
+
+.header {
+  background: -webkit-linear-gradient(360deg, #1E4BBE, #1EA3F6);
+  height: 20.458vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10vw;
+}
+
+.header-p {
+  color: white;
+  font-size: 2vw;
+  text-align: center;
+  margin: 0;
+  font-weight: 700;
+  position: relative;
+  top: 2vw;
+}
+
+.header button,
+.isi-jasa button {
+  border: none;
+  background: none;
+}
+
+.card-jasa {
+  background-color: white;
+  padding: 1.3vw 2.6041667vw;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7vw;
+  position: relative;
+  top: 7vw;
+}
+
+.card-jasa p {
+  margin: 0.5208333vw 0 0 0;
+  font-weight: 600;
+}
+
+.isi-jasa {
+  align-items: center;
+}
+
+.img-jasa {
+  background-size: contain;
+  width: 23vw;
+  height: 9vw;
+  border-radius: 0.5vw;
+}
+
+.img-jasa p {
+  color: white;
+  font-weight: 600;
+  padding: 0.5vw 1vw;
+}
+
+.teks1 {
+  margin-top: 4vw;
+}
+
+.teks1-p1 {
+  font-size: 2vw;
+  font-weight: 600;
+  margin: 0;
+}
+
+.teks1-p2 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 2.5vw;
+  color: #4D62A5;
+}
+
+.teks1-fitur {
+  margin-top: 2vw;
+}
+
+.penggunaan-img1 {
+  width: 7.4vw;
+}
+
+.penggunaan-img2 {
+  width: 4.7vw;
+}
+
+
+.isi-fitur {
+  margin-left: 1.5vw;
+}
+
+.deskripsi-fitur {
+  margin-left: 0;
+  margin-right: 5vw;
+}
+
+.judul-fitur {
+  font-weight: bold;
+  font-size: 1.7vw;
+  margin: 0 0 0.5vw;
+}
+
+.modal label {
+  font-weight: 600;
+}
+
+.modal-footer button {
+  background-color: #F26D0F;
+  font-weight: 600;
+  color: white;
+}
+
+.card-jasa button,
+.isi-jasa button {
+  border: none;
+  background-color: transparent;
+  transition: transform 0.3s ease;
+}
+
+.card-jasa button:hover {
+  transform: translateY(-10px);
+}
+
+.isi-jasa button:hover {
+  transform: translateY(-10px);
+}
+
+.kirim {
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  .kirim {
+    font-size: 15px;
+  }
+
+  .header {
+    height: 200px;
+    margin-bottom: 4rem;
+  }
+
+  .header-p {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 3rem;
+    font-weight: 700;
+    position: relative;
+    top: 2vw;
+  }
+
+  .card {
+    margin: 0;
+    border-radius: 0px;
+    padding: 25px 7vw;
+  }
+
+  .card-jasa {
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    gap: 30px;
+    top: 50px
+  }
+
+  .jasa img {
+    width: 40px;
+  }
+
+  .jasa p {
+    font-size: 12px;
+  }
+
+  .img-jasa {
+    width: 280px;
+    height: 80px;
+    margin-top: 1rem;
+  }
+
+  .teks1-p1 {
+    font-size: 17px;
+    margin-top: 3rem;
+  }
+
+  .teks1-p2 {
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+
+  .form-control {
+    height: 45px;
+    font-size: 1.2rem;
+  }
+
+  .penggunaan-img1 {
+    width: 80px;
+  }
+
+  .penggunaan-img2 {
+    width: 60px;
+  }
+
+
+  .isi-fitur {
+    margin-left: 1.5rem;
+  }
+
+  .judul-fitur {
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+  }
+
+  .deskripsi-fitur {
+    font-size: 14px;
+  }
+
+  #nomor {
+    margin-top: 20px;
+    margin-bottom: 7px;
+  }
+
+  .form-label {
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+
+  select {
+    height: 42px;
+    font-size: 1.1rem;
+  }
+
+  #register-btn {
+    height: 5.5vh;
+    font-size: 1.1rem;
+  }
+
+  footer {
+    display: flex;
+  }
+}

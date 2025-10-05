@@ -1,0 +1,181 @@
+.materi-title {
+  color: #3A425A;
+  margin-left: 0.8vw;
+}
+
+.nomor-alt {
+  font-size: 12px;
+  margin-right: 0
+}
+
+.nomor-alt p {
+  margin: 0;
+}
+
+.divider {
+  height: 0.1vw;
+  width: 100%;
+  background-color: #3A425A;
+  margin-left: 0.8vw;
+}
+
+.empty-topik {
+  text-align: center;
+  color: #000;
+  margin-top: 2vw;
+}
+
+.empty-topik-inner {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#kolomKanan-android {
+  display: none;
+}
+
+.topik-row {
+  margin-left: 0;
+  cursor: pointer;
+}
+
+.inner-box.topik-box {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.inner-box.selected-topik {
+  background-color: #375679;
+  width: 30vw;
+  margin-right: 3vw;
+  display: flex;
+  align-items: center;
+}
+
+.inner-box.selected-topik .nomor {
+  width: fit-content;
+  border-radius: 50%;
+  background-color: #ffffff;
+  /* padding: 0.1vw 0.23vw; */
+  padding: 0.5px 3px;
+  margin-right: 0.6vw;
+  color: #375679;
+}
+
+.inner-box.mulai {
+  background-color: #46CC6A;
+  color: #24384E;
+  width: 7vw;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.inner-box.topik-box .nomor-alt {
+  width: fit-content;
+  border-radius: 4vw;
+  font-size: 1vw;
+  background: transparent;
+  border: 0.1vw solid #ffffff;
+  padding: 0.1vw 0.23vw;
+  margin-right: 0.6vw;
+  color: #ffffff;
+}
+
+.inner-box p {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .boxleft span {
+    font-size: 16px;
+  }
+
+  #kolomKanan {
+    display: none;
+  }
+
+  .topik-row {
+    display: flex;
+    justify-content: space-between;
+    /* Membuat elemen di dalam row tersebar */
+    align-items: center;
+    /* Vertikal center */
+    width: 100%;
+    /* Pastikan row mengambil lebar penuh */
+  }
+
+  .inner-box b,
+  .inner-box p {
+    margin-left: 10px;
+    font-size: 12px;
+
+    /* Memberi jarak antar elemen */
+  }
+
+  .inner-box.topik-box {
+    display: flex;
+    align-items: center;
+
+    /* Tambahkan warna latar jika diinginkan */
+    padding: 10px;
+    /* Tambahkan padding sesuai kebutuhan */
+    flex-grow: 1;
+    /* Mengisi ruang yang tersedia */
+  }
+
+  #kolomKanan-android {
+    display: block;
+  }
+
+
+  .inner-box.mulai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #46CC6A;
+    /* Tambahkan warna latar jika diinginkan */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* Tambahkan padding sesuai kebutuhan */
+    width: 4rem;
+    /* Lebar fixed untuk elemen "Mulai" */
+  }
+
+  .inner-box.mulai b {
+    margin: 0;
+  }
+
+  .nomor {
+    font-size: 12px;
+    margin-right: 2rem;
+    width: 20px;
+    height: 20px;
+  }
+
+  .ineer-box p {
+    margin-left: 5px;
+  }
+
+  .inner-box.topik-box .nomor-alt {
+    width: fit-content;
+    border-radius: 50%;
+    font-size: 10px;
+    background: transparent;
+    border: 0.1vw solid #ffffff;
+    padding: 0.5px 3px;
+    margin-right: 0.6vw;
+    color: #ffffff;
+  }
+
+  .divider {
+    margin-top: 5px;
+    height: 1px;
+  }
+
+}

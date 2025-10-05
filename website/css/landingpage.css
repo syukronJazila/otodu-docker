@@ -1,0 +1,47 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Rethink Sans";
+}
+
+.btn-corousel{
+  color: white;
+  font-weight: 700;
+  background-color: #3E9BFF;
+  padding: 10px 30px 10px 30px;
+}
+
+.carousel-caption{
+  right: auto;
+  left: 10%;
+}
+
+.carousel-caption2{
+  
+  left: auto;
+  right: 27%;
+}
+
+.judul{
+  color: #4D62A5; 
+  font-weight: bold;
+}
+.produk{
+  font-weight: bold;
+  background: -webkit-linear-gradient(360deg,#255D99, #3E9BFF);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+
+.btn-produk{
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 10px 20px 10px 20px;
+  background-color: #3E9BFF;
+  border: none;
+}
+
+#footer{
+  background-color: #1F2844;
+  
+}

@@ -1,0 +1,112 @@
+.card {
+  border: none;
+  border-radius: 0.52vw;
+  /* 10px / 19.2 = 0.52vw */
+  margin-bottom: 1.04vw;
+  /* 20px / 19.2 = 1.04vw */
+  box-shadow: 0 0.21vw 0.42vw rgba(0, 0, 0, 0.1) !important;
+
+  background-color: #4D62A5;
+  margin: 0;
+}
+
+.card-selected {
+  border: 0.4vw solid #0079FB;
+
+}
+
+
+
+.card-title {
+  text-align: center;
+  font-weight: 700;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+
+h3 {
+  font-weight: bold;
+}
+
+.card-text {
+  text-align: center;
+}
+
+.card-body {
+  padding: 2.04vw;
+  /* 20px / 19.2 = 1.04vw */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-img-top {
+  width: 5.21vw;
+  /* 100px / 19.2 = 5.21vw */
+  height: 5.21vw;
+  /* 100px / 19.2 = 5.21vw */
+  margin: 0 auto;
+  display: block;
+}
+
+.card-img-top2 {
+  width: 3.30vw;
+  /* 50px / 19.2 = 2.6vw */
+}
+
+.card-img-top3 {
+  width: 10.25vw;
+  /* 120px / 19.2 = 6.25vw */
+}
+
+.card-title {
+  margin-top: 0.52vw;
+  /* 10px / 19.2 = 0.52vw */
+}
+
+.card3 {
+  height: 17vw;
+}
+
+.btn-card {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  color: white;
+}
+
+.btn {
+  background-color: #F26D0F;
+  color: white;
+  border: none;
+  border-radius: 0.26vw;
+  /* 5px / 19.2 = 0.26vw */
+  padding: 0.52vw 1.04vw;
+  /* 10px / 19.2 = 0.52vw, 20px / 19.2 = 1.04vw */
+  font-size: 2w;
+  /* 16px / 19.2 = 0.83vw */
+  cursor: pointer;
+}
+
+/* .btn:hover {
+  background-color: #FFC300;
+} */
+
+.btn-card {
+  border: none;
+  background-color: transparent;
+  transition: transform 0.3s ease;
+}
+
+.btn-card:hover {
+  transform: translateY(-20px);
+}
+
+.btn {
+  width: 10vw;
+  font-weight: 600;
+}

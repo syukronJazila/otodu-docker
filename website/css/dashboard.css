@@ -1,0 +1,117 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Rethink+Sans:700,400|Martian+Mono:700");
+
+/* The following line is used to measure usage of this code. You can remove it if you want. */
+@import url("https://px.animaapp.com/6719e5ab512ef1276478a088.6719e5ac512ef1276478a08b.I982oH7.hch.png");
+
+/* General Styles */
+.nlp-container {
+  padding: 4vw;
+  background-color: #375679;
+}
+
+.text-white {
+  color: white;
+}
+
+.nlp-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3vw;
+}
+
+/* Chart Container */
+.nlp-chart-container {
+  height: 30vw;
+  min-height: 300px;
+  padding: 0 4vw 1vw 4vw;
+  border-radius: 1vw;
+  position: relative;
+}
+
+.nlp-percentage-label {
+  font-size: 1.8vw;
+  font-weight: 600;
+  position: absolute;
+  top: 18vw;
+  left: 8vw;
+}
+
+.nlp-percentage-circle {
+  position: relative;
+  width: 15vw;
+}
+
+.nlp-subtract,
+.nlp-subtract-green {
+  width: 100%;
+  position: absolute;
+  top: 6vw;
+  left: 4vw;
+}
+
+.nlp-subtract-green {
+  z-index: 2;
+  clip-path: inset(50% 0 0 0);
+}
+
+.nlp-percentage-text {
+  position: absolute;
+  top: 13vw;
+  left: 4vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  font-size: 2.5vw;
+  font-weight: 500;
+}
+
+/* Achievements */
+.nlp-achievement-label,
+.nlp-achievement-quiz,
+.nlp-achievement-mastered,
+.nlp-achievement-new {
+  font-size: 1.8vw;
+  font-weight: 600;
+}
+
+.nlp-arrow {
+  font-size: 1.5vw;
+}
+
+.nlp-arrow-quiz {
+  transform: rotate(-20deg);
+  position: absolute;
+  top: 23vw;
+  left: 37vw;
+}
+
+/* Add additional arrows and 3r styles here */
+
+/* Sidebar */
+.nlp-sidebar {
+  height: 30vw;
+  min-height: 220px;
+  border-radius: 1vw;
+}
+
+.nlp-sidebar-content {
+  color: #1F2844;
+  padding: 4vw;
+}
+
+.nlp-last-study {
+  margin-bottom: 1.5rem;
+}
+
+.nlp-continue-button {
+  background-color: #375679;
+  border-radius: 8px;
+  padding: 0.5rem;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}

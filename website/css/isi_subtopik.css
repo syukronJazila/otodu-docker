@@ -1,0 +1,383 @@
+html,
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header img {
+            width: 150vw;
+        }
+
+        .content {
+            display: none;
+            /* Default sembunyikan semua konten */
+        }
+
+        .active {
+            display: grid;
+            place-items: center;
+        }
+
+        .active p {
+            margin-top: 5vw;
+            font-size: 3vw;
+            text-align: justify;
+        }
+
+        .pagination .nav-button {
+            font-weight: bold;
+            /* Membuat tombol tebal */
+        }
+
+        .pagination .active-button {
+            background-color: #1EA2F6;
+            color: white;
+            /* Warna teks tombol aktif */
+            border: none;
+        }
+
+        .pagination button:not(.active-button) {
+            background-color: #5D81AB;
+            /* Warna highlight untuk halaman aktif */
+            color: white;
+            /* Warna teks tombol aktif */
+            border: none;
+        }
+
+        .btn-pagination {
+            width: 8vw;
+            height: 10px;
+            border-radius: 5vw;
+        }
+
+        .question {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .answer-slot {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .choices {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .answer-slot div,
+        .choices div {
+            padding: 10px;
+            margin: 5px;
+            border: 2px solid #6578B2;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .pernyataan {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            font-size: 1em;
+            cursor: pointer;
+
+            border: 1px solid #ccc;
+            border-radius: 5px;
+
+        }
+
+        .pernyataan:hover {
+            background-color: #e0e0e0;
+        }
+
+        .benar {
+            background-color: #4CAF50;
+            /* Hijau */
+            color: white;
+        }
+
+        #hasil {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        #lanjut a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        #lanjut a:hover {
+            background-color: #0056b3;
+        }
+
+        .pembungkus-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3vw;
+        }
+
+        #materi img {
+            margin-top: 4vw;
+        }
+
+        .pembungkus-content p {
+            font-size: 200px;
+        }
+
+        .main {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            flex: 1;
+        }
+
+        .top-element {
+            flex: 1;
+        }
+
+        /* Gaya global */
+        .header-container {
+            margin: 0;
+            padding: 1vw 0;
+        }
+
+        .header-content {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 5vw;
+            align-items: center;
+            max-width: 100%;
+            height: 5vh;
+        }
+
+        /* Gaya untuk elemen gambar */
+        .navbar-brand {
+            margin-left: 8vw;
+        }
+
+        .responsive-img {
+            width: 12vw;
+            height: auto;
+        }
+
+        /* Gaya untuk teks */
+        .responsive-text {
+            color: #4D62A5;
+            font-size: 1.5vw;
+            margin: 0;
+            margin-left: 3vw;
+        }
+
+        .section-container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2vw;
+            /* Menambahkan jarak antar elemen */
+            padding: 0;
+            height: 100%;
+        }
+
+        .btn-close {
+            font-size: 1vw;
+        }
+
+        .nav-button {
+            font-size: 3vw;
+            margin-bottom: 1.2vh;
+            padding: 0;
+            font-weight: bold;
+        }
+
+        .hint-btn {
+            font-size: 1.5vw;
+        }
+
+        .isi-subtopik {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 0;
+        }
+
+        .content img {
+            width: 30vw;
+        }
+
+        .isi-subtopik p {
+            font-size: 20px;
+        }
+
+        footer {
+            background-color: #1F2844;
+            width: 100%;
+            padding: 1vw;
+            text-align: center;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            align-items: center;
+            gap: 5vw;
+        }
+
+        #petunjuk {
+            text-align: center;
+            display: flex;
+            gap: 1vw;
+            justify-content: center;
+            background-color: #1F2844;
+        }
+
+        #lanjut-btn {
+            width: 10vw;
+            background-color: #1EA2F6;
+        }
+
+        #nav-soal{
+            background-color: #375679; 
+            display: flex;
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center;
+            height: 8vh;
+        }
+        
+        @media (max-width: 600px) { /* 1000 kalau mau bagus di hp*/
+            header .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 2vw;
+            }
+
+            .header-content {
+                display: flex;
+                align-items: center;
+                max-width: 100%;
+            }
+
+            .navbar-brand {
+                display: none;
+            }
+
+            #nav-soal{
+                height: 6vh;
+            }
+
+            .responsive-text {
+                color: #4D62A5;
+                font-size: 2.5vw;
+                /* Ukuran font adaptif */
+                text-align: center;
+                margin: auto;
+            }
+
+            .section-container {
+                display: flex;
+                justify-content: center;
+                gap: 1vw;
+            }
+
+            .btn-close {
+                margin-top: 1vh;
+                font-size: 2vw;
+            }
+
+            .hint-btn {
+                font-size: 2.5vw;
+            }
+
+            .nav-button {
+                font-size: 5vw;
+                margin-bottom: 1vh;
+            }
+
+            .btn-pagination {
+                width: 8vw;
+                height: 1vh;
+                border-radius: 7vw;
+            }
+
+            .isi-subtopik {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            footer {
+                height: 10vh;
+                align-items: center;
+            }
+
+            #deskripsiPetunjuk{
+                font-size: 12px;
+                margin: 0;
+            }
+
+            #petunjuk {
+                font-size: 3vw;
+                margin-left: 3vw;
+            }
+
+            #lanjut-btn {
+                height: 4vh;
+                width: 20vw;
+                background-color: #1EA2F6;
+                font-size: 12px;
+                margin-bottom: 10px;
+            }
+
+            .content img {
+                margin-top: 5vh;
+                width: 45vw;
+            }
+
+            .isi-subtopik p {
+                font-size: 14px; /* 4vw kalo mau bagus di hp */
+                margin-top: 5vh;
+                margin-left: 5vw;
+                margin-right: 5vw;
+            }
+
+            #no-materi{
+                margin-top: 7vh;
+            }
+
+            .question {
+                font-size: 1em;
+                margin-bottom: 10px;
+            }
+
+            .answer-slot div,
+            .choices div {
+                padding: 5px;
+                margin: 3px;
+                font-size: 1em;
+            }
+
+            .pernyataan{
+                font-size: 12px;
+            }
+
+            .pertanyaan-container{
+                margin-top: 20px;
+            }
+            
+        }
